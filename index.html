@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Vault of Rarities</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="atmosphere" aria-hidden="true">
+    <div class="atm-glow atm-rose"></div>
+    <div class="atm-glow atm-violet"></div>
+    <div class="atm-glow atm-amber"></div>
+  </div>
+
+  <nav id="navbar" class="navbar">
+    <div class="nav-inner">
+      <button class="nav-brand" onclick="scrollToTop()">The Vault</button>
+      <div class="nav-links">
+        <button onclick="scrollToSection('gallery')">Collection</button>
+        <button onclick="scrollToSection('heritage')">Heritage</button>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero" id="top">
+    <div class="hero-content">
+      <p class="hero-eyebrow animate-entry" style="--delay:0s">A Curated Collection</p>
+      <h1 class="hero-title animate-entry" style="--delay:0.2s">
+        The Vault of<br /><em>Rarities</em>
+      </h1>
+      <div class="hero-rule animate-entry" style="--delay:0.38s"></div>
+      <p class="hero-body animate-entry" style="--delay:0.5s">
+        Every stone begins in darkness. Beneath mountains, in the silence below silence,
+        under pressures no language was made to describe — something beautiful is always
+        forming. I have always believed that true beauty works this way: patient,
+        unhurried, impossible to rush. Each gem here is a testament to that patience —
+        earth's most intimate creations, gathered with reverence.
+      </p>
+      <button class="hero-cta animate-entry" style="--delay:0.72s" onclick="scrollToSection('gallery')">
+        Enter the Collection
+      </button>
+    </div>
+    <button class="scroll-indicator animate-entry" style="--delay:1s" onclick="scrollToSection('gallery')" aria-label="Scroll down">
+      <svg width="14" height="22" viewBox="0 0 14 22" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round">
+        <rect x="1" y="1" width="12" height="20" rx="6"/>
+        <line x1="7" y1="5" x2="7" y2="9" class="scroll-dot"/>
+      </svg>
+    </button>
+  </section>
+
+  <section id="stats" class="stats-bar">
+    <div class="stats-line reveal-scale"></div>
+    <div class="stats-inner">
+      <span class="stat reveal-up" style="--delay:0.05s"><em>14</em>&thinsp;Stones Curated</span>
+      <span class="stat-sep" aria-hidden="true"></span>
+      <span class="stat reveal-up" style="--delay:0.15s">Est.&thinsp;<em>2024</em></span>
+      <span class="stat-sep" aria-hidden="true"></span>
+      <span class="stat reveal-up" style="--delay:0.25s">Global Provenance</span>
+    </div>
+    <div class="stats-line reveal-scale" style="--delay:0.1s; transform-origin:right;"></div>
+  </section>
+
+  <section class="quote-section">
+    <div class="quote-inner reveal-up">
+      <div class="quote-accent"></div>
+      <blockquote>
+        "The earth takes its time with things that last.<br />
+        Every gem is a promise kept across millions of years."
+      </blockquote>
+      <div class="quote-accent"></div>
+    </div>
+  </section>
+
+  <section id="gallery" class="gallery-section">
+    <div class="section-header reveal-up">
+      <p class="section-eyebrow">Fourteen Stones</p>
+      <h2>The Collection</h2>
+      <p class="section-sub">Each selected for its singular fire, clarity, and story</p>
+    </div>
+    <div class="gallery-grid" id="galleryGrid"></div>
+  </section>
+
+  <section id="heritage" class="heritage-section">
+    <div class="heritage-bg" aria-hidden="true"></div>
+    <div class="heritage-inner">
+      <div class="heritage-text reveal-left">
+        <p class="section-eyebrow">The Philosophy</p>
+        <h2>On Beauty<br />and Patience</h2>
+        <p>There is a particular kind of knowledge that comes from long acquaintance with beautiful things — not the facts about them, but an understanding that settles into the body. A gem held often enough begins to feel like an extension of thought.</p>
+        <p>These stones were not chosen for their price or their prestige. They were chosen because each one, held in the right light at the right moment, produces a small, private shock of wonder. That is the only criterion that has ever mattered.</p>
+      </div>
+      <div class="heritage-tiles">
+        <div class="tile reveal-up" style="--delay:0s">
+          <div class="tile-accent"></div><h4>Purity</h4>
+          <p>Each stone is examined for its quality of light — the way brilliance moves through matter and emerges transformed.</p>
+        </div>
+        <div class="tile reveal-up" style="--delay:0.1s">
+          <div class="tile-accent"></div><h4>Provenance</h4>
+          <p>Origin matters. A stone's birthplace is part of its character — the geology of a place written into its colour.</p>
+        </div>
+        <div class="tile reveal-up" style="--delay:0.2s">
+          <div class="tile-accent"></div><h4>Resonance</h4>
+          <p>Beyond beauty, there is the feeling a stone produces — a quality that resists description but is immediately recognisable.</p>
+        </div>
+        <div class="tile reveal-up" style="--delay:0.3s">
+          <div class="tile-accent"></div><h4>Rarity</h4>
+          <p>Not all gems are rare, but all rare things earn a different quality of attention. That attention is a form of respect.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-line"></div>
+    <div class="footer-brand">The Vault of Rarities</div>
+    <div class="footer-icons">
+      <a href="https://instagram.com/gh.serein" target="_blank" rel="noreferrer" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="2" width="20" height="20" rx="5"/>
+          <circle cx="12" cy="12" r="4"/>
+          <circle cx="17.5" cy="6.5" r="0.8" fill="currentColor" stroke="none"/>
+        </svg>
+      </a>
+      <a href="https://t.me/Ghadoraserein" target="_blank" rel="noreferrer" aria-label="Telegram">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22 3L2 10l7 2.5"/>
+          <path d="M9 12.5L22 3"/>
+          <path d="M9 12.5l2 6.5 3-4"/>
+          <path d="M14 15l4 4"/>
+        </svg>
+      </a>
+      <a href="mailto:ghadora559@gmail.com" aria-label="Email">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="5" width="20" height="14" rx="2"/>
+          <path d="M2 8l10 7 10-7"/>
+        </svg>
+      </a>
+    </div>
+    <p class="footer-credit">Made by Ghadeer Ali</p>
+    <p class="footer-copy">© 2024 The Vault of Rarities. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
