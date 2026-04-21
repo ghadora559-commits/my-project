@@ -21,6 +21,7 @@ const isTouchDevice = () => window.matchMedia('(hover: none)').matches;
 
 function buildGallery() {
   const grid = document.getElementById('galleryGrid');
+  grid.appendchild(card);
   if (!grid) return;
   GEMSTONES.forEach((gem, i) => {
     const delay = (Math.min(i, 7) * 0.065).toFixed(2);
