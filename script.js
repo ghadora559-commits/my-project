@@ -21,7 +21,6 @@ const isTouchDevice = () => window.matchMedia('(hover: none)').matches;
 
 function buildGallery() {
   const grid = document.getElementById('galleryGrid');
-  grid.appendchild(card);
   if (!grid) return;
   GEMSTONES.forEach((gem, i) => {
     const delay = (Math.min(i, 7) * 0.065).toFixed(2);
@@ -64,6 +63,7 @@ function buildGallery() {
     grid.appendChild(card);
   });
 }
+
 function initReveal() {
   const obs = new IntersectionObserver(
     entries => entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('revealed'); obs.unobserve(e.target); } }),
